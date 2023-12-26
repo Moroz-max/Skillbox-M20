@@ -14,6 +14,7 @@
 		1FD9372D2B3B7242002CBFE9 /* Skillbox_M20.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9372B2B3B7242002CBFE9 /* Skillbox_M20.xcdatamodeld */; };
 		1FD9372F2B3B7243002CBFE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD9372E2B3B7243002CBFE9 /* Assets.xcassets */; };
 		1FD937322B3B7243002CBFE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD937302B3B7243002CBFE9 /* LaunchScreen.storyboard */; };
+		9664F0A6A0CF142C339D6274 /* Pods_Skillbox_M20.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C2BCE424E76B29411E600F /* Pods_Skillbox_M20.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		1FD9372E2B3B7243002CBFE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FD937312B3B7243002CBFE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FD937332B3B7243002CBFE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		746BE72D2954751DC5760F2A /* Pods-Skillbox-M20.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skillbox-M20.release.xcconfig"; path = "Target Support Files/Pods-Skillbox-M20/Pods-Skillbox-M20.release.xcconfig"; sourceTree = "<group>"; };
+		8B3D9D7DFDE43774FC817A7D /* Pods-Skillbox-M20.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skillbox-M20.debug.xcconfig"; path = "Target Support Files/Pods-Skillbox-M20/Pods-Skillbox-M20.debug.xcconfig"; sourceTree = "<group>"; };
+		A7C2BCE424E76B29411E600F /* Pods_Skillbox_M20.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skillbox_M20.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9664F0A6A0CF142C339D6274 /* Pods_Skillbox_M20.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				1FD937212B3B7242002CBFE9 /* Skillbox-M20 */,
 				1FD937202B3B7242002CBFE9 /* Products */,
+				914AB68F2AA106AD2D73B327 /* Pods */,
+				C4A75C043B61A102B56AEE35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = "Skillbox-M20";
 			sourceTree = "<group>";
 		};
+		914AB68F2AA106AD2D73B327 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D9D7DFDE43774FC817A7D /* Pods-Skillbox-M20.debug.xcconfig */,
+				746BE72D2954751DC5760F2A /* Pods-Skillbox-M20.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4A75C043B61A102B56AEE35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7C2BCE424E76B29411E600F /* Pods_Skillbox_M20.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FD937362B3B7243002CBFE9 /* Build configuration list for PBXNativeTarget "Skillbox-M20" */;
 			buildPhases = (
+				BC161386EF5F398192A43D06 /* [CP] Check Pods Manifest.lock */,
 				1FD9371B2B3B7242002CBFE9 /* Sources */,
 				1FD9371C2B3B7242002CBFE9 /* Frameworks */,
 				1FD9371D2B3B7242002CBFE9 /* Resources */,
+				A898B3D3997F705EEECE57B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A898B3D3997F705EEECE57B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skillbox-M20/Pods-Skillbox-M20-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skillbox-M20/Pods-Skillbox-M20-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skillbox-M20/Pods-Skillbox-M20-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC161386EF5F398192A43D06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skillbox-M20-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FD9371B2B3B7242002CBFE9 /* Sources */ = {
@@ -291,6 +360,7 @@
 		};
 		1FD937372B3B7243002CBFE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B3D9D7DFDE43774FC817A7D /* Pods-Skillbox-M20.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +389,7 @@
 		};
 		1FD937382B3B7243002CBFE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 746BE72D2954751DC5760F2A /* Pods-Skillbox-M20.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
