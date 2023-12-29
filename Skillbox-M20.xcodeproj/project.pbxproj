@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F8103D52B3E120B0066E2B4 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8103D42B3E120B0066E2B4 /* Countries.swift */; };
+		1F8103E32B3E16EA0066E2B4 /* Artist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8103E12B3E16EA0066E2B4 /* Artist+CoreDataClass.swift */; };
+		1F8103E42B3E16EA0066E2B4 /* Artist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8103E22B3E16EA0066E2B4 /* Artist+CoreDataProperties.swift */; };
+		1F8103E62B3E19C90066E2B4 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8103E52B3E19C90066E2B4 /* ArtistCell.swift */; };
+		1F8103E82B3E27940066E2B4 /* AddArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8103E72B3E27940066E2B4 /* AddArtistViewController.swift */; };
 		1FD937232B3B7242002CBFE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD937222B3B7242002CBFE9 /* AppDelegate.swift */; };
 		1FD937252B3B7242002CBFE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD937242B3B7242002CBFE9 /* SceneDelegate.swift */; };
 		1FD937272B3B7242002CBFE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD937262B3B7242002CBFE9 /* ViewController.swift */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F8103D42B3E120B0066E2B4 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		1F8103E12B3E16EA0066E2B4 /* Artist+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Artist+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1F8103E22B3E16EA0066E2B4 /* Artist+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Artist+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		1F8103E52B3E19C90066E2B4 /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		1F8103E72B3E27940066E2B4 /* AddArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistViewController.swift; sourceTree = "<group>"; };
 		1FD9371F2B3B7242002CBFE9 /* Skillbox-M20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skillbox-M20.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD937222B3B7242002CBFE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FD937242B3B7242002CBFE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F8103DC2B3E15FC0066E2B4 /* CoreDataSubclasses */ = {
+			isa = PBXGroup;
+			children = (
+				1F8103E12B3E16EA0066E2B4 /* Artist+CoreDataClass.swift */,
+				1F8103E22B3E16EA0066E2B4 /* Artist+CoreDataProperties.swift */,
+			);
+			path = CoreDataSubclasses;
+			sourceTree = "<group>";
+		};
 		1FD937162B3B7242002CBFE9 = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +84,13 @@
 		1FD937212B3B7242002CBFE9 /* Skillbox-M20 */ = {
 			isa = PBXGroup;
 			children = (
+				1F8103DC2B3E15FC0066E2B4 /* CoreDataSubclasses */,
 				1FD937222B3B7242002CBFE9 /* AppDelegate.swift */,
+				1F8103E52B3E19C90066E2B4 /* ArtistCell.swift */,
 				1FD937242B3B7242002CBFE9 /* SceneDelegate.swift */,
 				1FD937262B3B7242002CBFE9 /* ViewController.swift */,
+				1F8103E72B3E27940066E2B4 /* AddArtistViewController.swift */,
+				1F8103D42B3E120B0066E2B4 /* Countries.swift */,
 				1FD937282B3B7242002CBFE9 /* Main.storyboard */,
 				1FD9372E2B3B7243002CBFE9 /* Assets.xcassets */,
 				1FD937302B3B7243002CBFE9 /* LaunchScreen.storyboard */,
@@ -83,7 +106,6 @@
 				8B3D9D7DFDE43774FC817A7D /* Pods-Skillbox-M20.debug.xcconfig */,
 				746BE72D2954751DC5760F2A /* Pods-Skillbox-M20.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,8 +234,13 @@
 			files = (
 				1FD937272B3B7242002CBFE9 /* ViewController.swift in Sources */,
 				1FD937232B3B7242002CBFE9 /* AppDelegate.swift in Sources */,
+				1F8103E82B3E27940066E2B4 /* AddArtistViewController.swift in Sources */,
+				1F8103E62B3E19C90066E2B4 /* ArtistCell.swift in Sources */,
+				1F8103E32B3E16EA0066E2B4 /* Artist+CoreDataClass.swift in Sources */,
 				1FD937252B3B7242002CBFE9 /* SceneDelegate.swift in Sources */,
+				1F8103D52B3E120B0066E2B4 /* Countries.swift in Sources */,
 				1FD9372D2B3B7242002CBFE9 /* Skillbox_M20.xcdatamodeld in Sources */,
+				1F8103E42B3E16EA0066E2B4 /* Artist+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +303,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -339,7 +366,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
